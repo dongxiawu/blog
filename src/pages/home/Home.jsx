@@ -1,10 +1,9 @@
-import React, {Component, PropTypes} from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-import Header from '../../components/header/Header';
+import TodoApp from '../../components/todoComponents/TodoApp';
 
-import Footer from '../../components/footer/Footer.jsx';
-
-import Upload from '../uploadFile/UploadFile.jsx';
+import logoSrc from '../../stylesheets/images/logo.svg';
 
 class Home extends Component {
 
@@ -15,24 +14,24 @@ class Home extends Component {
   componentDidMount() {
 
   }
-
-  // render() {
-  //   return (
-  //     <div>
-  //       <div>1234</div>
-  //       <Upload/>
-  //     </div>
-  //   );
-  // }
   // 渲染
   render() {
     return (
-      <div>
-        <div>1234</div>
-        <Upload/>
+      <div style={styles.divStyle}>
+        <img alt="logo" src={logoSrc} style={styles.logoStyle}/>
+        <TodoApp/>
       </div>
     );
   }
 }
+
+const styles = {
+  logoStyle: {
+    width: '100px',
+  },
+  divStyle: {
+    textAlign: 'center',
+  },
+};
 
 export default Home;

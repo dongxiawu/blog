@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class LifeCycle  extends Component{
+
+  // 属性默认值设置
+  static defaultProps = {};
+
+
   // 1.1 创建对象时调用
   constructor(props, context) {
     super(props, context);

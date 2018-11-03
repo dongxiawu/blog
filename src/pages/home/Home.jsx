@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import Header from './components/header';
+
 class Home extends Component {
 
   constructor(props) {
@@ -13,7 +15,9 @@ class Home extends Component {
   // 渲染
   render() {
     return (
-      <div style={styles.divStyle}>123</div>
+      <div>
+        <Header/>
+      </div>
     );
   }
 }

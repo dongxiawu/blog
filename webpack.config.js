@@ -9,7 +9,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // 用于自动打开浏览器的插件
-const OpenBrowserPlugin = require('open-browser-webpack-plugin');
+// const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 // path 模块的一个方法，返回组合路径，前面加上 __dirname 这个全局变量，可以防止不同操作系统之间的文件路径问题
 // 具体函数作用，见: https://nodejs.org/api/path.html#path_path_resolve_paths
@@ -115,11 +115,11 @@ module.exports = {
       filename: 'index.html', //指定输出文件名
     }),
 
-    new OpenBrowserPlugin(
-      {
-        url: 'http://localhost:8080'
-      }
-    ),
+    // new OpenBrowserPlugin(
+    //   {
+    //     url: 'http://localhost:8080'
+    //   }
+    // ),
   ]
   // // devServer 字段： 配置开发服务器，指定服务在本地运行的端口、根目录、静态资源实际目录等。
   // devServer: {

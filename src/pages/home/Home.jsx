@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import TodoApp from '../../components/todoComponents/TodoApp';
-
-import logoSrc from '../../stylesheets/images/logo.svg';
-
 class Home extends Component {
 
   constructor(props) {
@@ -17,10 +13,7 @@ class Home extends Component {
   // 渲染
   render() {
     return (
-      <div style={styles.divStyle}>
-        <img alt="logo" src={logoSrc} style={styles.logoStyle}/>
-        <TodoApp/>
-      </div>
+      <div style={styles.divStyle}>123</div>
     );
   }
 }

@@ -1,9 +1,0 @@
-const TodoContants = {
-  CREATE:'CREATE',
-  DELETE:'DELETE',
-  UPDATE:'UPDATE',
-  TOGGLE_COMPLETE:'TOGGLE_COMPLETE',
-  TOGGLE_COMPLETE_ALL:'TOGGLE_COMPLETE_ALL'
-};
-
-export default  TodoContants;

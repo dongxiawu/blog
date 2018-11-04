@@ -17,7 +17,7 @@
   "author": "dongxiawu",
   "license": "ISC",
   "dependencies": {
-    "antd": "^3.10.3",
+    "antd": "^3.10.4",
     "less": "^3.8.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
@@ -31,6 +31,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "babel-plugin-import": "^1.11.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
@@ -42,6 +43,7 @@
     "html-webpack-plugin": "^3.2.0",
     "less-loader": "^4.1.0",
     "node-sass": "^4.9.4",
+    "open-browser-webpack-plugin": "0.0.5",
     "prop-types": "^15.6.2",
     "redux-actions": "^2.6.4",
     "redux-logger": "^3.0.6",

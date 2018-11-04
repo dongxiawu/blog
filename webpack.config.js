@@ -11,6 +11,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // 用于自动打开浏览器的插件
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 // path 模块的一个方法，返回组合路径，前面加上 __dirname 这个全局变量，可以防止不同操作系统之间的文件路径问题
 // 具体函数作用，见: https://nodejs.org/api/path.html#path_path_resolve_paths
 // publicPath: 公共资源文件输出目录
@@ -104,6 +106,9 @@ module.exports = {
   },
 
   plugins: [
+
+    new CleanWebpackPlugin(outputPath),
+
     // 官方推荐，使其更容易查看要修补(patch)的依赖
     new webpack.NamedModulesPlugin(),
     // 热替换插件 避免每次代码修改后刷新页面

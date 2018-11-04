@@ -43,6 +43,9 @@ class Header extends Component {
           <Menu.Item key="app">
             <Icon type="appstore" />Navigation Two
           </Menu.Item>
+          {/*<Menu.Item key="app">*/}
+            {/*<Icon type="appstore" />Navigation Three*/}
+          {/*</Menu.Item>*/}
         </Menu>
       </div>
     );

@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 
 import Header from './components/header';
 
+import './Home.css';
+
 class Home extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      display: true,
+    };
   }
 
   componentDidMount() {
@@ -14,9 +19,15 @@ class Home extends Component {
   }
   // 渲染
   render() {
+    const { display } = this.state;
     return (
       <div>
         <Header/>
+        <div>
+
+        </div>
+        <aside className={`sidebar ${display ? "sidebar-appear" : "sidebar-disappear"}`}>
+        </aside>
       </div>
     );
   }

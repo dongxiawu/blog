@@ -1,0 +1,43 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #222222;
+    box-shadow: inset 0 2px 6px #000;
+}
+
+.sidebar-appear {
+    animation: sidebar-show 1s normal forwards;
+}
+.sidebar-disappear {
+    animation: sidebar-show 1s reverse forwards;
+}
+
+@keyframes sidebar-hide {
+    from {
+        display: block;
+        width: 320px;
+    }
+    to {
+        display: none;
+        width: 0;
+    }
+}
+
+@keyframes sidebar-show {
+    from {
+        display: none;
+        width: 0;
+    }
+    to {
+        display: block;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+}

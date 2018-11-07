@@ -1,0 +1,105 @@
+.sidebar-toggle {
+    position: fixed;
+    right: 30px;
+    bottom: 45px;
+    width: 22px;
+    height: 22px;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1050;
+    background: #222222;
+}
+
+.sidebar-toggle-line {
+    position: relative;
+    display: block;
+    background: #87daff;
+    height: 2px;
+    margin-top: 3px;
+    width: 100%;
+}
+
+.sidebar-toggle:first-child {
+    margin-top: 0;
+}
+
+/*.sidebar-toggle .sidebar-toggle-line-first {*/
+    /*!*transition: width 1s;*!*/
+    /*animation: sidebar-toggle-line-first-hover 1s reverse forwards;*/
+/*}*/
+/*.sidebar-toggle .sidebar-toggle-line-last {*/
+    /*animation: sidebar-toggle-line-last-hover 1s reverse forwards;*/
+/*}*/
+.sidebar-toggle:hover .sidebar-toggle-line-first {
+    animation: sidebar-toggle-line-first-hover 500ms forwards;
+}
+.sidebar-toggle:hover .sidebar-toggle-line-last {
+    animation: sidebar-toggle-line-last-hover 500ms forwards;
+}
+
+/*.sidebar-toggle-line-first {*/
+
+/*}*/
+
+/*.sidebar-toggle:hover {*/
+/*animation: sidebar-toggle-line-first-hover 1s;*/
+/*}*/
+@keyframes sidebar-toggle-line-first-hover {
+    from {
+        top: 0;
+        width: 100%;
+        transform: rotateZ(0deg);
+    }
+    to {
+        top: 3px;
+        width: 50%;
+        transform: rotateZ(-45deg);
+    }
+}
+@keyframes sidebar-toggle-line-last-hover {
+    from {
+        top: 0;
+        width: 100%;
+        transform: rotateZ(0deg);
+    }
+    to {
+        top: -3px;
+        width: 50%;
+        transform: rotateZ(45deg);
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #222222;
+    box-shadow: inset 0 2px 6px #000;
+    z-index: 1040;
+}
+
+.sidebar-appear {
+    animation: sidebar-show 1s normal forwards;
+}
+
+.sidebar-disappear {
+    animation: sidebar-show 1s reverse forwards;
+}
+
+@keyframes sidebar-show {
+    from {
+        display: none;
+        width: 0;
+    }
+    to {
+        display: block;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+}

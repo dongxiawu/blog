@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Header from './components/header';
+import Sidebar from '../../components/sidebar';
 
 import './Home.css';
 
@@ -23,11 +24,7 @@ class Home extends Component {
     return (
       <div>
         <Header/>
-        <div>
-
-        </div>
-        <aside className={`sidebar ${display ? "sidebar-appear" : "sidebar-disappear"}`}>
-        </aside>
+        <Sidebar/>
       </div>
     );
   }
